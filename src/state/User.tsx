@@ -19,3 +19,17 @@ export const User = () => {
         </div>
     )
 }
+
+// using type assertion
+export const UserWithAssertion = () => {
+    const [user, setUser] = useState<AuthUser>({} as AuthUser)
+
+    const handleLogin = () => setUser({ name: 'sanith', email: 'sanith@gmail.com' })
+    return(
+        <div>
+            <button onClick={handleLogin}>Login</button>
+            <div>user name is {user.name}</div>
+            <div>user email is {user.email}</div>
+        </div>
+    )
+}
