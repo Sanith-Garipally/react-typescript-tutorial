@@ -1,9 +1,12 @@
 import './App.css';
+import { DomRef } from './components/Ref/DomRef';
+// import { MutableRef } from './components/Ref/MutableRef';
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <DomRef />
+      {/* <MutableRef /> */}
     </div>
   );
 }
