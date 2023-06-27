@@ -1,9 +1,10 @@
 import './App.css';
+import { Toast } from './components/templateliterals/toast';
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <Toast position='center'/>
     </div>
   );
 }
